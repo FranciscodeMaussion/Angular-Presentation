@@ -22,31 +22,29 @@
         <md-toolbar class="md-theme-indigo">
           <h1 class="md-toolbar-tools">Angular JS</h1>
         </md-toolbar>
-        <md-content layout-padding ng-controller="LeftCtrl">
-          <a href="#/angular">
-            <p hide show-gt-md>
-                Angular
-            </p>
-          </a>
-          <a href="#/modelo">
-            <p hide show-gt-md>
-                Modelo
-            </p>
-          </a>
-          <a href="#/controlador">
-            <p hide show-gt-md>
-                Controlador
-            </p>
-          </a>
-          <a href="#/vista">
-            <p hide show-gt-md>
-                Vista
-            </p>
-          </a>
-          <a href="#/ejemplo">
-            <p hide show-gt-md>
-                Ejemplo
-          </p></a>
+        <md-content ng-controller="LeftCtrl" hide show-gt-md>
+          <md-list ng-controller="ListCtrl" ng-cloak>
+            <md-list-item ng-click="goRoute('#/angular')" >
+              <p>Angular</p>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item ng-click="goRoute('#/modelo')">
+              <p>Modelo</p>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item ng-click="goRoute('#/controlador')">
+              <p>Controlador</p>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item ng-click="goRoute('#/vista')">
+              <p>Vista</p>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item ng-click="goRoute('#/ejemplo')">
+              <p>Ejemplo</p>
+            </md-list-item>
+            <md-divider></md-divider>
+          </md-list>
         </md-content>
       </md-sidenav>
     <div ng-view> //ng view here

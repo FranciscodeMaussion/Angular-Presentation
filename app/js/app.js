@@ -22,6 +22,11 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
         templateUrl : "ejemplo.html"
     });
 })
+.controller('ListCtrl', function($scope, $mdDialog) {
+  $scope.goRoute = function(ruta){
+    
+  }
+})
 .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.close = function () {
       // Component lookup should always be available since we are not using `ng-if`
