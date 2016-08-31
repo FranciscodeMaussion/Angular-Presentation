@@ -1,6 +1,6 @@
-angular.module('Presentacion', ['ngMaterial'])
+angular.module('presentacion', ['ngMaterial'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-    .primaryPalette('indigo')
-    .accentPalette('grey');
+    .primaryPalette('teal')
+    .accentPalette('amber');
 });
