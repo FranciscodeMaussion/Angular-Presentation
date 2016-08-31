@@ -6,14 +6,14 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
 })
 .config(function($routeProvider) {
     $routeProvider
-    .when("/angular", {
+    .when("/", {
         templateUrl : "angular/angular.html"
     })
     .when("/modelo", {
         templateUrl : "modelo/modelo.html"
     })
     .when("/controlador", {
-        templateUrl : "/controlador/controlador.html"
+        templateUrl : "controlador/controlador.html"
     })
     .when("/vista", {
         templateUrl : "vista/vista.html"
@@ -22,9 +22,9 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
         templateUrl : "ejemplo/ejemplo.html"
     });
 })
-.controller('ListCtrl', function($scope, $mdDialog) {
+.controller('ListCtrl', function($scope, $location) {
   $scope.goRoute = function(ruta){
-    
+    $location.path( ruta );
   }
 })
 .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {

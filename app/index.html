@@ -24,32 +24,34 @@
         </md-toolbar>
         <md-content ng-controller="LeftCtrl" hide show-gt-md>
           <md-list ng-controller="ListCtrl" ng-cloak>
-            <md-list-item ng-click="goRoute('#/angular')" >
-              <p>Angular</p>
+            <md-list-item ng-click="goRoute('/')" >
+              <a>Angular</a>
             </md-list-item>
             <md-divider></md-divider>
-            <md-list-item ng-click="goRoute('#/modelo')">
+            <md-list-item ng-click="goRoute('/modelo')">
               <p>Modelo</p>
             </md-list-item>
             <md-divider></md-divider>
-            <md-list-item ng-click="goRoute('#/controlador')">
+            <md-list-item ng-click="goRoute('/controlador')">
               <p>Controlador</p>
             </md-list-item>
             <md-divider></md-divider>
-            <md-list-item ng-click="goRoute('#/vista')">
+            <md-list-item ng-click="goRoute('/vista')">
               <p>Vista</p>
             </md-list-item>
             <md-divider></md-divider>
-            <md-list-item ng-click="goRoute('#/ejemplo')">
+            <md-list-item ng-click="goRoute('/ejemplo')">
               <p>Ejemplo</p>
             </md-list-item>
             <md-divider></md-divider>
           </md-list>
         </md-content>
       </md-sidenav>
-    <div ng-view> //ng view here
-La wea view
-    </div>
+    <md-content flex layout-padding>
+      <div layout="column" layout-align="top center" ng-view>
+     </div>
+     <div flex></div>
+    </md-content>
   </section>
 
     <script src="../bower_components/angular/angular.js"></script>
