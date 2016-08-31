@@ -1,0 +1,18 @@
+{
+  "name": "Angular-Presentation",
+  "homepage": "https://github.com/frandemo/Angular-Presentation",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-material": "^1.1.0"
+  }
+}
