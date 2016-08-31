@@ -3,18 +3,25 @@
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+    <style>
+      a:link {color: black;}      /* unvisited link */
+      a:visited {color: black;}   /* visited link */
+      a:hover {color: black;}     /* mouse over link */
+      a:active {color: black;}
+    </style>
 </head>
-    <body ng-app="presentacion">
+    <body ng-app="Presentacion">
+      <section layout="row" flex>
+
       <md-sidenav
           class="md-sidenav-left"
           md-component-id="left"
-          md-is-locked-open="$mdMedia('gt-md')"
+          md-is-locked-open="true"
           md-whiteframe="4">
         <md-toolbar class="md-theme-indigo">
-          <h1 class="md-toolbar-tools">Presentacion Angular</h1>
+          <h1 class="md-toolbar-tools">Angular JS</h1>
         </md-toolbar>
         <md-content layout-padding ng-controller="LeftCtrl">
-
           <a href="#/angular">
             <p hide show-gt-md>
                 Angular
@@ -38,14 +45,13 @@
           <a href="#/ejemplo">
             <p hide show-gt-md>
                 Ejemplo
-            </p>
-          </a>
+          </p></a>
         </md-content>
       </md-sidenav>
-    <div>
-
+    <div ng-view> //ng view here
+La wea view
     </div>
-
+  </section>
 
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-aria/angular-aria.js"></script>

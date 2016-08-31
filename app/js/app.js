@@ -1,4 +1,4 @@
-angular.module('presentacion', ['ngMaterial', 'ngRoute'])
+angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('red')
