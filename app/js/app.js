@@ -7,19 +7,19 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
 .config(function($routeProvider) {
     $routeProvider
     .when("/angular", {
-        templateUrl : "angular.html"
+        templateUrl : "angular/angular.html"
     })
     .when("/modelo", {
-        templateUrl : "modelo.html"
+        templateUrl : "modelo/modelo.html"
     })
     .when("/controlador", {
-        templateUrl : "controlador.html"
+        templateUrl : "/controlador/controlador.html"
     })
     .when("/vista", {
-        templateUrl : "vista.html"
+        templateUrl : "vista/vista.html"
     })
     .when("/ejemplo", {
-        templateUrl : "ejemplo.html"
+        templateUrl : "ejemplo/ejemplo.html"
     });
 })
 .controller('ListCtrl', function($scope, $mdDialog) {
