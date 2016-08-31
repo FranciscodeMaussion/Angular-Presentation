@@ -1,8 +1,26 @@
-angular.module('presentacion', ['ngMaterial'])
+angular.module('presentacion', ['ngMaterial', 'ngRoute'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-    .primaryPalette('teal')
+    .primaryPalette('red')
     .accentPalette('amber');
+})
+.config(function($routeProvider) {
+    $routeProvider
+    .when("/angular", {
+        templateUrl : "angular.html"
+    })
+    .when("/modelo", {
+        templateUrl : "modelo.html"
+    })
+    .when("/controlador", {
+        templateUrl : "controlador.html"
+    })
+    .when("/vista", {
+        templateUrl : "vista.html"
+    })
+    .when("/ejemplo", {
+        templateUrl : "ejemplo.html"
+    });
 })
 .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.close = function () {
