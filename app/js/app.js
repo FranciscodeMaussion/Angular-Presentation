@@ -1,4 +1,4 @@
-angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
+angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('red')
@@ -7,7 +7,8 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute'])
 .config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "angular/angular.html"
+        templateUrl : "angular/angular.html",
+        controller : "AngularController"
     })
     .when("/modelo", {
         templateUrl : "modelo/modelo.html"

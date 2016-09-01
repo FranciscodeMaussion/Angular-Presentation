@@ -1,0 +1,10 @@
+.pr-img{
+  max-width: 500px !important;
+  max-height: 500px !important;
+}
+.layout-column, .layout-row {
+    box-sizing: none !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}

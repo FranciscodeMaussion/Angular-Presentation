@@ -3,12 +3,9 @@
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
-    <style>
-      a:link {color: black;}      /* unvisited link */
-      a:visited {color: black;}   /* visited link */
-      a:hover {color: black;}     /* mouse over link */
-      a:active {color: black;}
-    </style>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+          rel="stylesheet">
 </head>
     <body ng-app="Presentacion">
       <section layout="row" flex style="height:100%;">
@@ -45,7 +42,7 @@
           </md-list>
         </md-sidenav>
       <md-content flex layout-padding>
-        <div layout="column" layout-align="top center" ng-view>
+        <div layout="column"  ng-view>
         </div >
        <div flex></div>
       </md-content>
@@ -57,5 +54,6 @@
     <script src="../bower_components/angular-material/angular-material.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script src="js/app.js"></script>
+    <script src="angular/angular.controller.js"></script>
 </body>
 </html>
