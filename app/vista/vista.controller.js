@@ -28,7 +28,7 @@ angular.module('Vista', ['ngMaterial'])
      '#cfd8dc', '#b0bec5', '#90a4ae', '#78909c', '#607d8b', '#546e7a', '#cfd8dc', '#b0bec5', '#78909c'];
       $scope.colorTiles = (function() {
         var tiles = [];
-        for (var i = 0; i < 46; i++) {
+        for (var i = 0; i < 10; i++) {
           tiles.push({
             color: randomColor(),
             colspan: randomSpan(),
@@ -50,8 +50,13 @@ angular.module('Vista', ['ngMaterial'])
           return 3;
         }
       }
-      $scope.deleteColor = (function(index){
-        COLORS.splice(index);
-        $scope.colorTiles;
+      $scope.addColor = (function() {
+        console.log("");
+        $scope.colorTiles.push(
+          {
+      color: randomColor(),
+      colspan: randomSpan(),
+      rowspan: randomSpan()
+      });
       })
 });
