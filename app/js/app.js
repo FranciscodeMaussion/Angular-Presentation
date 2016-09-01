@@ -1,4 +1,4 @@
-angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular','Modulos','Controlador'])
+angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular','Modulos','Controlador','Vista'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('red')
@@ -19,7 +19,8 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular','Modulos','Con
         controller : "ControladorController"
     })
     .when("/vista", {
-        templateUrl : "vista/vista.html"
+        templateUrl : "vista/vista.html",
+        controller : "VistaController"
     })
     .when("/ejemplo", {
         templateUrl : "ejemplo/ejemplo.html"

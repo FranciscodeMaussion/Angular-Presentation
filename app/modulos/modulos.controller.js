@@ -20,7 +20,7 @@ angular.module('Modulos', ['ngMaterial'])
       'selected': false
     },
     {
-      'title': "Routing",
+      'title': "Routing y Dependencias",
       'photo': "/img/routing.png",
       'text': "",
       'selected': false
