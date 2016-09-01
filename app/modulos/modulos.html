@@ -1,3 +1,18 @@
-<md-content>
-  asd
+<md-content class="md-padding" layout-xs="column" layout="row">
+  <div flex-xs flex-gt-xs="30" layout="column" ng-repeat="characteristic in characteristics">
+    <md-card>
+      <img ng-src="{{characteristic.photo}}" class="md-card-image" alt="Washed Out"      ng-click="selected($index)">
+      <div ng-show="characteristic.selected">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{characteristic.title}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          {{characteristics.text}}
+        </md-card-content>
+      </div>
+    </md-card>
+  </div>
+
 </md-content>
