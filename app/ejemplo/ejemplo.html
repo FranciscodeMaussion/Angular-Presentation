@@ -4,24 +4,26 @@
       <md-card-title-text>
         <md-input-container>
           <label>Nombre</label>
-          <input type="text" placeholder="Dalmiro Vilca"> <!-- ng-model !-->
+          <input type="text" placeholder="Juanito" ng-model="contacto.nombre"> <!-- ng-model !-->
         </md-input-container>
         <md-input-container>
           <label>Telefono</label>
-          <input type="text" placeholder="351504315"> <!-- ng-model !-->
+          <input type="text" placeholder="324134123" ng-model="contacto.telefono"> <!-- ng-model !-->
         </md-input-container>
       </md-card-title-text>
     </md-card-title>
     <md-card-actions layout="row" layout-align="end center">
-      <md-button class="md-raised md-primary">Añadir Registro</md-button> <!-- ng-click !-->
+      <md-button class="md-raised md-primary" ng-click="agregarALista()">Añadir Registro</md-button> <!-- ng-click !-->
     </md-card-actions>
   </md-card>
   <h1>Lista de Contactos</h1>
   <md-list ng-cloak>
-    <md-list-item> <!-- ng-repeat !-->
-      <p>Nombre: Angular</p> <!-- call from $scope !-->
-      <p>Telefono: 12345</p> <!-- call from $scope !-->
+    <div ng-repeat="a in lista">
+    <md-list-item > <!-- ng-repeat !-->
+      <p>Nombre: {{a.nombre}}</p> <!-- call from $scope !-->
+      <p>Telefono: {{a.telefono}}</p> <!-- call from $scope !-->
     </md-list-item>
     <md-divider></md-divider>
+  </div>
   </md-list>
 </div>
