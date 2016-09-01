@@ -1,4 +1,4 @@
-angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular','Modulos','Controlador','Vista'])
+angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular','Modulos','Controlador','Vista'])//add module
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('red')
@@ -24,6 +24,7 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular','Modulos','Con
     })
     .when("/ejemplo", {
         templateUrl : "ejemplo/ejemplo.html"
+        //add controller
     });
 })
 .controller('ListCtrl', function($scope, $location) {

@@ -1,1 +1,27 @@
-Aca vamos a hacer el ejemplo
+<div> <!-- ng-controller !-->
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <md-input-container>
+          <label>Nombre</label>
+          <input type="text" placeholder="Dalmiro Vilca"> <!-- ng-model !-->
+        </md-input-container>
+        <md-input-container>
+          <label>Telefono</label>
+          <input type="text" placeholder="351504315"> <!-- ng-model !-->
+        </md-input-container>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button class="md-raised md-primary">Añadir Registro</md-button> <!-- ng-click !-->
+    </md-card-actions>
+  </md-card>
+  <h1>Lista de Contactos</h1>
+  <md-list ng-cloak>
+    <md-list-item> <!-- ng-repeat !-->
+      <p>Nombre: Angular</p> <!-- call from $scope !-->
+      <p>Telefono: 12345</p> <!-- call from $scope !-->
+    </md-list-item>
+    <md-divider></md-divider>
+  </md-list>
+</div>
