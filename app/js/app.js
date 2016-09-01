@@ -10,8 +10,8 @@ angular.module('Presentacion', ['ngMaterial', 'ngRoute','Angular'])
         templateUrl : "angular/angular.html",
         controller : "AngularController"
     })
-    .when("/modelo", {
-        templateUrl : "modelo/modelo.html"
+    .when("/modulos", {
+        templateUrl : "modulos/modulos.html"
     })
     .when("/controlador", {
         templateUrl : "controlador/controlador.html"
