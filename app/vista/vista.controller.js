@@ -50,5 +50,8 @@ angular.module('Vista', ['ngMaterial'])
           return 3;
         }
       }
-
+      $scope.deleteColor = (function(index){
+        COLORS.splice(index);
+        $scope.colorTiles;
+      })
 });
