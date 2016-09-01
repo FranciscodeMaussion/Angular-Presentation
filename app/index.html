@@ -11,18 +11,16 @@
     </style>
 </head>
     <body ng-app="Presentacion">
-      <section layout="row" flex>
+      <section layout="row" flex style="height:100%;">
 
-      <md-sidenav
-          class="md-sidenav-left"
-          style="position:absolute"
-          md-component-id="left"
-          md-is-locked-open="true"
-          md-whiteframe="4">
-        <md-toolbar class="md-theme-indigo">
-          <h1 class="md-toolbar-tools">Angular JS</h1>
-        </md-toolbar>
-        <md-content ng-controller="LeftCtrl" hide show-gt-md>
+        <md-sidenav
+            class="md-sidenav-left"
+            md-component-id="left"
+            md-is-locked-open="true"
+            md-whiteframe="4">
+          <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Angular JS</h1>
+          </md-toolbar>
           <md-list ng-controller="ListCtrl" ng-cloak>
             <md-list-item ng-click="goRoute('/')" >
               <a>Angular</a>
@@ -45,14 +43,13 @@
             </md-list-item>
             <md-divider></md-divider>
           </md-list>
-        </md-content>
-      </md-sidenav>
-    <md-content flex layout-padding>
-      <div layout="column" layout-align="top center" ng-view>
-     </div>
-     <div flex></div>
-    </md-content>
-  </section>
+        </md-sidenav>
+      <md-content flex layout-padding>
+        <div layout="column" layout-align="top center" ng-view>
+        </div >
+       <div flex></div>
+      </md-content>
+    </section>
 
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-aria/angular-aria.js"></script>
